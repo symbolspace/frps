@@ -6,7 +6,7 @@ services:
   frps-server:
     image: symbolspace/frps
     container_name: frps-server
-    host_name: frps-server
+    hostname: frps-server
     restart: always
     network_mode: "host"
     environment:
