@@ -1,0 +1,15 @@
+---
+
+version: '3'
+
+services:
+  frps-server:
+    image: symbolspace/frps
+    container_name: frps-server
+    host_name: frps-server
+    restart: always
+    network_mode: "host"
+    environment:
+      TZ: "Asia/Shanghai"
+    volumes:
+      - ../data/frps.ini:/conf/frps.ini
