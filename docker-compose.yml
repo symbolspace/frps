@@ -1,7 +1,4 @@
----
-
 version: '3'
-
 services:
   frps-server:
     image: symbolspace/frps:v0.51.3
