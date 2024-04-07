@@ -3,7 +3,7 @@ FROM alpine
 RUN apk add --update tzdata
 ENV TZ=Asia/Shanghai
 
-ENV FRP_VERSION v0.51.3
+ENV FRP_VERSION 0.51.3
 # wget https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_linux_amd64.tar.gz
 RUN wget https://mirror-symbol.q32.top:8443/staticfile/software/github/releases/frp_${FRP_VERSION}_linux_amd64.tar.gz
 RUN tar -xf frp_${FRP_VERSION}_linux_amd64.tar.gz
