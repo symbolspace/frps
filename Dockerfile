@@ -18,4 +18,4 @@ RUN mkdir /conf
 VOLUME /conf
 
 WORKDIR /frps
-ENTRYPOINT ["./frps","-c","/conf/frps.ini"]
+ENTRYPOINT ["./frps","-c","/conf/frps.toml"]
